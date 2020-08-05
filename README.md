@@ -7,6 +7,9 @@ To download tweets from twitters database a developer account is needed to authe
 Tweets can be downloaded with ``` python getSetAmountOftweets.py X``` to get the text of X tweets
 or by ```make createManyTweets``` to get 500 000 tweets, putting them in the manytweets file. For the programs to work the aforementioned keys need to be inserted into the top of the files where there are two empty strings.
 
+## TestU01
+To make use of the testU01 testing suite it first needs to be installed. This can be done [here](http://www.iro.umontreal.ca/~simardr/testu01/install.html)
+
 ## Generators
 The different generators can all be run with the command `make createBin` to create the binary files of random numbers that are used in the testing. They do this by reading the tweets written down in `manytweets`. They create the numbers in this way as connection to the internet for every new random number takes too long time when generating a large amount of them. Furthermore twitter only allows a user to connect to their database a certain amount of times before you are locked out for a while. Before the binfiles can be created `manytweets` needs to have at least 50MB in it to ensure the generators do not fall into a predictable cycle due to the low number of tweets, the tests were run at 250MB.
 
